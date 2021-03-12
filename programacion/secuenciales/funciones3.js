@@ -200,14 +200,36 @@ if (clave===2) {
 //problema 9 
 document.write('9.Hacer un algoritmo que calcule el total a pagar por la compra de camisas. Si se compran tres camisas o más se aplica un descuento del 20% sobre el total de la compra y si son menos de tres camisas un descuento del 10%',salto,salto);
 
-//problema 10
-document.write('10. Una empresa quiere hacer una compra de varias piezas de la misma clase a una fábrica de refacciones. La empresa, dependiendo del monto total de la compra, decidirá qué hacer para pagar al fabricante. Si el monto total de la compra excede de $500 000 la empresa tendrá la capacidad de invertir de su propio dinero un 55% del monto de la compra, pedir prestado al banco un 30% y el resto lo pagará solicitando un crédito al fabricante. Si el monto total de la compra no excede de $500 000 la empresa tendrá capacidad de invertir de su propio dinero un 70% y el restante 30% lo pagará solicitando crédito al fabricante. El fabricante cobra por concepto de intereses un 20% sobre la cantidad que se le pague a crédito',salto,salto);
+//variable:
+var totalpagardes1;
+var totalapagardes2;
+var descuento1;
+var descuento2;
+var valcamisacom;
+var valcamisacom2;
 
+//constantes:
+const costonormal = 20000
+const clave0 = 20
+const Clave1 = 10
+const camisas1 = 3
+const camisas2 = 2
 
+//condicionales:
+if (costonormal > camisas1 ) {
+    valcamisacom  = costonormal * camisas1 
+    descuento1 = ((valcamisacom * clave0) / 100)
+    totalpagardes1 =  valcamisacom - descuento1 
+    document.write(' el desceunto 1  si es mayor a 3 camisas es de:',descuento1,salto,' el total a pagar es de:',totalpagardes1,salto,salto);
+}
+if (costonormal > camisas2) {
+    valcamisacom2  = costonormal * camisas2           
+    descuento2 = ((valcamisacom2 * Clave1) / 100)
+    totalapagardes2 = valcamisacom2 - descuento2
+    document.write('el descuento 2 si es menor a 3 camisas es de: ',descuento2,salto,'el total a pagar es de: ',totalapagardes2,salto,salto);
+} 
 
-
-
-//----------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //estructuras complejas:
 
@@ -263,31 +285,32 @@ if (nume3 > nume1 & nume3 > nume2) {
 
 document.write('el numero mayor ingresado es =',resultado,salto,salto);
 
-//---------------------------------------------------------------------------------------------------------------------------
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //problema3
 document.write('3. Determinar la cantidad de dinero que recibirá un trabajador por concepto de las horas extras trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de 8; si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que se pagan las horas normales y el resto al triple',salto,salto);
 
-//variables
-var dineroarecibir;
-var valorhoranormal = 15000
-var Horastrabajadas = 50
-var Horasextras = (Horastrabajadas - 40)
+//variables:
+var Horastrabajada = 50
+var resltadohoras;
+var horasextras = Horastrabajada - 40
+var pagohextra = (2 * horasextras)
+var pagohextra3 = ((horasextras - 48)*3) 
+var valhora = 15000
 
-
-// constante
-const horasextras1 = 2
-const horasextras2 = 3
+// constante:
 const limitehnor = 40
 
-
-if (Horasextras = 6776) {
+//condicionales
+if (Horastrabajada <- limitehnor) {
+    resultadohoras - Horastrabajadas
+}
+if ((Horastrabajada > limitehnor) & horasextras <-8) {
+    resultadohoras = ('las horas trabajadas son:' + Horastrabajada + 'y las horas extras son: ' + horasextras,salto,salto);
+}
+if (Horastrabajada > limitehnor & horasextras > 8) {
+    resultadohoras = ('las horas trabajadas son:',Horastrabajada,'y las horas extras son: ',horasextras,salto,salto);
     
 }
 
-
-
-
-
-
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

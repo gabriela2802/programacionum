@@ -292,28 +292,4 @@ montocadacuota = (terrenos- cuotainicial) / cuota
 //resolver
 document.write(' monto de cada cuota ',montocadacuota,salto,salto);
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------
-var horasalida = prompt('Que horas son al salir', '');
-// Parseador de texto a numero, es decir de letras a números
-horasalida = parseInt(horasalida);
-var msj;
-
-if (horasalida <=7) {
-    horasalida = 1;
-}else {
-    horasalida = 'tarde';
-}
-
-switch (horasalida) {
-    case 1:
-        msj = 'Vas temprano desayunas en la panaderia y tomas metro';
-        break;
-    case 'tarde':
-        msj = 'Vas tarde toma un taxi';
-        break;
-    default:
-        msj = salto+' No es una hora válida';
-        break;
-    }
-    alert(msj);
-    document.write(msj);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
